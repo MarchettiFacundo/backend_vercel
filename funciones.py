@@ -14,7 +14,7 @@ db = Database(DATABASE_URL)
 
 # ____________SELECT____________
 def get_materias():
-    select_sql = " SELECT * FROM materias"
+    select_sql = "SELECT * FROM materia"
     params = None
     materias = db.select(select_sql,params)
     return materias.to_json()

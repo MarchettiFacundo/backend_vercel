@@ -13,3 +13,7 @@ def hola():
 def obtener_materias():
     materias = get_materias()
     return materias
+def main():
+    uvicorn.run("app:app", port=3001,host= '0.0.0.0')
+if __name__ == "__main__":
+    main()
